@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7F97D1D1B37367200FE171A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D1C1B37367200FE171A /* main.m */; };
+		F7F97D201B37367200FE171A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D1F1B37367200FE171A /* AppDelegate.m */; };
+		F7F97D231B37367200FE171A /* ScoreRecorder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D211B37367200FE171A /* ScoreRecorder.xcdatamodeld */; };
+		F7F97D261B37367200FE171A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D251B37367200FE171A /* MasterViewController.m */; };
+		F7F97D291B37367200FE171A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D281B37367200FE171A /* DetailViewController.m */; };
+		F7F97D2C1B37367200FE171A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F97D2A1B37367200FE171A /* Main.storyboard */; };
+		F7F97D2E1B37367200FE171A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F97D2D1B37367200FE171A /* Images.xcassets */; };
+		F7F97D311B37367200FE171A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F97D2F1B37367200FE171A /* LaunchScreen.xib */; };
+		F7F97D3D1B37367300FE171A /* ScoreRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D3C1B37367300FE171A /* ScoreRecorderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7F97D371B37367300FE171A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7F97D0F1B37367200FE171A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7F97D161B37367200FE171A;
+			remoteInfo = ScoreRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7F97D171B37367200FE171A /* ScoreRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F97D1B1B37367200FE171A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7F97D1C1B37367200FE171A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7F97D1E1B37367200FE171A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F7F97D1F1B37367200FE171A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F7F97D221B37367200FE171A /* ScoreRecorder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScoreRecorder.xcdatamodel; sourceTree = "<group>"; };
+		F7F97D241B37367200FE171A /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		F7F97D251B37367200FE171A /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		F7F97D271B37367200FE171A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F7F97D281B37367200FE171A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F7F97D2B1B37367200FE171A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7F97D2D1B37367200FE171A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F7F97D301B37367200FE171A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F7F97D361B37367300FE171A /* ScoreRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7F97D3B1B37367300FE171A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7F97D3C1B37367300FE171A /* ScoreRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreRecorderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7F97D141B37367200FE171A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7F97D331B37367300FE171A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7F97D0E1B37367200FE171A = {
+			isa = PBXGroup;
+			children = (
+				F7F97D191B37367200FE171A /* ScoreRecorder */,
+				F7F97D391B37367300FE171A /* ScoreRecorderTests */,
+				F7F97D181B37367200FE171A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7F97D181B37367200FE171A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7F97D171B37367200FE171A /* ScoreRecorder.app */,
+				F7F97D361B37367300FE171A /* ScoreRecorderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7F97D191B37367200FE171A /* ScoreRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				F7F97D1E1B37367200FE171A /* AppDelegate.h */,
+				F7F97D1F1B37367200FE171A /* AppDelegate.m */,
+				F7F97D241B37367200FE171A /* MasterViewController.h */,
+				F7F97D251B37367200FE171A /* MasterViewController.m */,
+				F7F97D271B37367200FE171A /* DetailViewController.h */,
+				F7F97D281B37367200FE171A /* DetailViewController.m */,
+				F7F97D2A1B37367200FE171A /* Main.storyboard */,
+				F7F97D2D1B37367200FE171A /* Images.xcassets */,
+				F7F97D2F1B37367200FE171A /* LaunchScreen.xib */,
+				F7F97D211B37367200FE171A /* ScoreRecorder.xcdatamodeld */,
+				F7F97D1A1B37367200FE171A /* Supporting Files */,
+			);
+			path = ScoreRecorder;
+			sourceTree = "<group>";
+		};
+		F7F97D1A1B37367200FE171A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7F97D1B1B37367200FE171A /* Info.plist */,
+				F7F97D1C1B37367200FE171A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7F97D391B37367300FE171A /* ScoreRecorderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7F97D3C1B37367300FE171A /* ScoreRecorderTests.m */,
+				F7F97D3A1B37367300FE171A /* Supporting Files */,
+			);
+			path = ScoreRecorderTests;
+			sourceTree = "<group>";
+		};
+		F7F97D3A1B37367300FE171A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7F97D3B1B37367300FE171A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7F97D161B37367200FE171A /* ScoreRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7F97D401B37367300FE171A /* Build configuration list for PBXNativeTarget "ScoreRecorder" */;
+			buildPhases = (
+				F7F97D131B37367200FE171A /* Sources */,
+				F7F97D141B37367200FE171A /* Frameworks */,
+				F7F97D151B37367200FE171A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScoreRecorder;
+			productName = ScoreRecorder;
+			productReference = F7F97D171B37367200FE171A /* ScoreRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7F97D351B37367300FE171A /* ScoreRecorderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7F97D431B37367300FE171A /* Build configuration list for PBXNativeTarget "ScoreRecorderTests" */;
+			buildPhases = (
+				F7F97D321B37367300FE171A /* Sources */,
+				F7F97D331B37367300FE171A /* Frameworks */,
+				F7F97D341B37367300FE171A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7F97D381B37367300FE171A /* PBXTargetDependency */,
+			);
+			name = ScoreRecorderTests;
+			productName = ScoreRecorderTests;
+			productReference = F7F97D361B37367300FE171A /* ScoreRecorderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7F97D0F1B37367200FE171A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Yunfeng Bai";
+				TargetAttributes = {
+					F7F97D161B37367200FE171A = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					F7F97D351B37367300FE171A = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = F7F97D161B37367200FE171A;
+					};
+				};
+			};
+			buildConfigurationList = F7F97D121B37367200FE171A /* Build configuration list for PBXProject "ScoreRecorder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7F97D0E1B37367200FE171A;
+			productRefGroup = F7F97D181B37367200FE171A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7F97D161B37367200FE171A /* ScoreRecorder */,
+				F7F97D351B37367300FE171A /* ScoreRecorderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7F97D151B37367200FE171A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F97D2C1B37367200FE171A /* Main.storyboard in Resources */,
+				F7F97D311B37367200FE171A /* LaunchScreen.xib in Resources */,
+				F7F97D2E1B37367200FE171A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7F97D341B37367300FE171A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7F97D131B37367200FE171A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F97D291B37367200FE171A /* DetailViewController.m in Sources */,
+				F7F97D261B37367200FE171A /* MasterViewController.m in Sources */,
+				F7F97D201B37367200FE171A /* AppDelegate.m in Sources */,
+				F7F97D1D1B37367200FE171A /* main.m in Sources */,
+				F7F97D231B37367200FE171A /* ScoreRecorder.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7F97D321B37367300FE171A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7F97D3D1B37367300FE171A /* ScoreRecorderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7F97D381B37367300FE171A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7F97D161B37367200FE171A /* ScoreRecorder */;
+			targetProxy = F7F97D371B37367300FE171A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7F97D2A1B37367200FE171A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7F97D2B1B37367200FE171A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7F97D2F1B37367200FE171A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7F97D301B37367200FE171A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7F97D3E1B37367300FE171A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7F97D3F1B37367300FE171A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7F97D411B37367300FE171A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScoreRecorder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F7F97D421B37367300FE171A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ScoreRecorder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F7F97D441B37367300FE171A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScoreRecorderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreRecorder.app/ScoreRecorder";
+			};
+			name = Debug;
+		};
+		F7F97D451B37367300FE171A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScoreRecorderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScoreRecorder.app/ScoreRecorder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7F97D121B37367200FE171A /* Build configuration list for PBXProject "ScoreRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7F97D3E1B37367300FE171A /* Debug */,
+				F7F97D3F1B37367300FE171A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7F97D401B37367300FE171A /* Build configuration list for PBXNativeTarget "ScoreRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7F97D411B37367300FE171A /* Debug */,
+				F7F97D421B37367300FE171A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F7F97D431B37367300FE171A /* Build configuration list for PBXNativeTarget "ScoreRecorderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7F97D441B37367300FE171A /* Debug */,
+				F7F97D451B37367300FE171A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7F97D211B37367200FE171A /* ScoreRecorder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7F97D221B37367200FE171A /* ScoreRecorder.xcdatamodel */,
+			);
+			currentVersion = F7F97D221B37367200FE171A /* ScoreRecorder.xcdatamodel */;
+			path = ScoreRecorder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F7F97D0F1B37367200FE171A /* Project object */;
+}
