@@ -10,12 +10,11 @@
 		F7F97D1D1B37367200FE171A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D1C1B37367200FE171A /* main.m */; };
 		F7F97D201B37367200FE171A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D1F1B37367200FE171A /* AppDelegate.m */; };
 		F7F97D231B37367200FE171A /* ScoreRecorder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D211B37367200FE171A /* ScoreRecorder.xcdatamodeld */; };
-		F7F97D261B37367200FE171A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D251B37367200FE171A /* MasterViewController.m */; };
-		F7F97D291B37367200FE171A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D281B37367200FE171A /* DetailViewController.m */; };
 		F7F97D2C1B37367200FE171A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F97D2A1B37367200FE171A /* Main.storyboard */; };
 		F7F97D2E1B37367200FE171A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F97D2D1B37367200FE171A /* Images.xcassets */; };
 		F7F97D311B37367200FE171A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F97D2F1B37367200FE171A /* LaunchScreen.xib */; };
 		F7F97D3D1B37367300FE171A /* ScoreRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D3C1B37367300FE171A /* ScoreRecorderTests.m */; };
+		F7F97D481B37977000FE171A /* AddPlayerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D471B37977000FE171A /* AddPlayerTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,16 +34,14 @@
 		F7F97D1E1B37367200FE171A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F7F97D1F1B37367200FE171A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F7F97D221B37367200FE171A /* ScoreRecorder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScoreRecorder.xcdatamodel; sourceTree = "<group>"; };
-		F7F97D241B37367200FE171A /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		F7F97D251B37367200FE171A /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		F7F97D271B37367200FE171A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		F7F97D281B37367200FE171A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		F7F97D2B1B37367200FE171A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7F97D2D1B37367200FE171A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F7F97D301B37367200FE171A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F7F97D361B37367300FE171A /* ScoreRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F97D3B1B37367300FE171A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7F97D3C1B37367300FE171A /* ScoreRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreRecorderTests.m; sourceTree = "<group>"; };
+		F7F97D461B37977000FE171A /* AddPlayerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPlayerTableViewController.h; sourceTree = "<group>"; };
+		F7F97D471B37977000FE171A /* AddPlayerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPlayerTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,14 +85,9 @@
 			children = (
 				F7F97D1E1B37367200FE171A /* AppDelegate.h */,
 				F7F97D1F1B37367200FE171A /* AppDelegate.m */,
-				F7F97D241B37367200FE171A /* MasterViewController.h */,
-				F7F97D251B37367200FE171A /* MasterViewController.m */,
-				F7F97D271B37367200FE171A /* DetailViewController.h */,
-				F7F97D281B37367200FE171A /* DetailViewController.m */,
 				F7F97D2A1B37367200FE171A /* Main.storyboard */,
-				F7F97D2D1B37367200FE171A /* Images.xcassets */,
-				F7F97D2F1B37367200FE171A /* LaunchScreen.xib */,
-				F7F97D211B37367200FE171A /* ScoreRecorder.xcdatamodeld */,
+				F7F97D461B37977000FE171A /* AddPlayerTableViewController.h */,
+				F7F97D471B37977000FE171A /* AddPlayerTableViewController.m */,
 				F7F97D1A1B37367200FE171A /* Supporting Files */,
 			);
 			path = ScoreRecorder;
@@ -104,6 +96,9 @@
 		F7F97D1A1B37367200FE171A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F7F97D2D1B37367200FE171A /* Images.xcassets */,
+				F7F97D2F1B37367200FE171A /* LaunchScreen.xib */,
+				F7F97D211B37367200FE171A /* ScoreRecorder.xcdatamodeld */,
 				F7F97D1B1B37367200FE171A /* Info.plist */,
 				F7F97D1C1B37367200FE171A /* main.m */,
 			);
@@ -227,10 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7F97D291B37367200FE171A /* DetailViewController.m in Sources */,
-				F7F97D261B37367200FE171A /* MasterViewController.m in Sources */,
 				F7F97D201B37367200FE171A /* AppDelegate.m in Sources */,
 				F7F97D1D1B37367200FE171A /* main.m in Sources */,
+				F7F97D481B37977000FE171A /* AddPlayerTableViewController.m in Sources */,
 				F7F97D231B37367200FE171A /* ScoreRecorder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +422,7 @@
 				F7F97D421B37367300FE171A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7F97D431B37367300FE171A /* Build configuration list for PBXNativeTarget "ScoreRecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +431,7 @@
 				F7F97D451B37367300FE171A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
