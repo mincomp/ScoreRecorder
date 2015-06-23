@@ -15,6 +15,7 @@
 		F7F97D311B37367200FE171A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F97D2F1B37367200FE171A /* LaunchScreen.xib */; };
 		F7F97D3D1B37367300FE171A /* ScoreRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D3C1B37367300FE171A /* ScoreRecorderTests.m */; };
 		F7F97D481B37977000FE171A /* AddPlayerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D471B37977000FE171A /* AddPlayerTableViewController.m */; };
+		F7F97D4E1B39333A00FE171A /* GameRoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D4D1B39333A00FE171A /* GameRoundViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		F7F97D3C1B37367300FE171A /* ScoreRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreRecorderTests.m; sourceTree = "<group>"; };
 		F7F97D461B37977000FE171A /* AddPlayerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPlayerTableViewController.h; sourceTree = "<group>"; };
 		F7F97D471B37977000FE171A /* AddPlayerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPlayerTableViewController.m; sourceTree = "<group>"; };
+		F7F97D4C1B39333A00FE171A /* GameRoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRoundViewController.h; sourceTree = "<group>"; };
+		F7F97D4D1B39333A00FE171A /* GameRoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRoundViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +86,13 @@
 		F7F97D191B37367200FE171A /* ScoreRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				F7F97D2A1B37367200FE171A /* Main.storyboard */,
 				F7F97D1E1B37367200FE171A /* AppDelegate.h */,
 				F7F97D1F1B37367200FE171A /* AppDelegate.m */,
-				F7F97D2A1B37367200FE171A /* Main.storyboard */,
 				F7F97D461B37977000FE171A /* AddPlayerTableViewController.h */,
 				F7F97D471B37977000FE171A /* AddPlayerTableViewController.m */,
+				F7F97D4C1B39333A00FE171A /* GameRoundViewController.h */,
+				F7F97D4D1B39333A00FE171A /* GameRoundViewController.m */,
 				F7F97D1A1B37367200FE171A /* Supporting Files */,
 			);
 			path = ScoreRecorder;
@@ -223,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F97D201B37367200FE171A /* AppDelegate.m in Sources */,
+				F7F97D4E1B39333A00FE171A /* GameRoundViewController.m in Sources */,
 				F7F97D1D1B37367200FE171A /* main.m in Sources */,
 				F7F97D481B37977000FE171A /* AddPlayerTableViewController.m in Sources */,
 				F7F97D231B37367200FE171A /* ScoreRecorder.xcdatamodeld in Sources */,
