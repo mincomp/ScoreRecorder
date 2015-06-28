@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jgL-Sf-Xd3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jgL-Sf-Xd3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Add Players-->
@@ -25,7 +25,23 @@
                             <outlet property="delegate" destination="8of-4l-rWX" id="vof-S8-B7S"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Add Players" id="xPg-HT-qEc"/>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="vz0-YG-JyL"/>
+                        <barButtonItem title="Start Game" id="osf-Tw-ipJ">
+                            <connections>
+                                <segue destination="XSy-M4-jYZ" kind="show" id="mgC-WN-rjV"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Add Players" id="xPg-HT-qEc">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="kAt-hO-Tkt"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="K2w-Bg-nVY"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="addButton" destination="K2w-Bg-nVY" id="a4D-u2-Pmh"/>
+                        <outlet property="editButton" destination="kAt-hO-Tkt" id="1Vf-2C-jVa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmt-gx-JgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

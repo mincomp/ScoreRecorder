@@ -9,6 +9,8 @@
 #import "AddPlayerTableViewController.h"
 
 @interface AddPlayerTableViewController ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
 
 @end
 
