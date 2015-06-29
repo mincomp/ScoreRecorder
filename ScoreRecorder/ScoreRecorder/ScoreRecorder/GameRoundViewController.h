@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RoundData.h"
 
 @interface GameRoundViewController : UIViewController
+
+@property (strong, nonatomic) NSMutableArray* players;
+@property (strong, nonatomic) NSMutableArray *history;
+@property (strong, nonatomic) RoundData *currentRoundTotal;
+@property (nonatomic) BOOL firstRound;
 
 @end

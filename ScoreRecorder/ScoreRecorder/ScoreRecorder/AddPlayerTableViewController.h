@@ -10,7 +10,6 @@
 
 @interface AddPlayerTableViewController : UITableViewController <UIAlertViewDelegate>
 
-@property (strong, nonatomic) UIBarButtonItem* addButton;
-@property (strong, nonatomic) NSMutableArray* values;
+@property (strong, nonatomic) NSMutableArray* players;
 
 @end

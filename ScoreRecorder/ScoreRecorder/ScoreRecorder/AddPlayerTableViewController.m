@@ -7,6 +7,7 @@
 //
 
 #import "AddPlayerTableViewController.h"
+#import "GameRoundViewController.h"
 
 @interface AddPlayerTableViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
@@ -16,30 +17,23 @@
 
 @implementation AddPlayerTableViewController
 
+- (IBAction)addPlayer:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title" message:@"Need player name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alert show];
+}
+
+- (IBAction)editPlayer:(id)sender {
+    [self setEditing:true];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-    
-    self.addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                                                                   target:self
-                                                                   action:@selector(addItem:)];
-    
-    self.values = [[NSMutableArray alloc] init];
-    
-    self.navigationItem.rightBarButtonItem = self.addButton;
-    
-    UIBarButtonItem *startItem = [[UIBarButtonItem alloc] initWithTitle:@"Title"
-                                                                  style:UIBarButtonItemStylePlain
-                                                                 target:self
-                                                                 action:@selector(startGame:)];
-    
-    UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
-                                                                          target:nil action:nil];
-    self.toolbarItems = @[space, startItem];
+    self.players = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,16 +45,14 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1) {
-        [self.values addObject:[alertView textFieldAtIndex:0].text];
-        NSIndexPath *path = [NSIndexPath indexPathForRow:self.values.count - 1 inSection:0];
+        [self.players addObject:[alertView textFieldAtIndex:0].text];
+        NSIndexPath *path = [NSIndexPath indexPathForRow:self.players.count - 1 inSection:0];
         [self.tableView insertRowsAtIndexPaths:@[path] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
 
 - (void)addItem:sender {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Title" message:@"Need player name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
-    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
-    [alert show];
+
 }
 
 - (void)startGame:sender {
@@ -79,7 +71,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     // If row is deleted, remove it from the list.
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.values removeObjectAtIndex:indexPath.row];
+        [self.players removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
@@ -93,7 +85,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return self.values.count;
+    return self.players.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -104,7 +96,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:ReuseIdentifier];
     }
     
-    cell.textLabel.text = self.values[indexPath.row];
+    cell.textLabel.text = self.players[indexPath.row];
     
     return cell;
 }
@@ -133,12 +125,11 @@
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    UIViewController *controller = [segue destinationViewController];
-    if (segue.identifier == @"Next") {
-        
+    if ([segue.identifier isEqual: @"GameRound"]) {
+        GameRoundViewController *v = [segue destinationViewController];
+        v.players = self.players;
+        v.firstRound = YES;
     }
 }
-
 @end
