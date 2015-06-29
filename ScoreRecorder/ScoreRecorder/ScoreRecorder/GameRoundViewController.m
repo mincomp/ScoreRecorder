@@ -9,6 +9,7 @@
 #import "GameRoundViewController.h"
 #import "HistoryViewController.h"
 #import "AddPlayerTableViewController.h"
+#import "ScoreHelper.h"
 
 @interface GameRoundViewController ()
 
@@ -62,6 +63,7 @@
     y += rowHeight + rowMargin;
     
     self.scoreFields = [[NSMutableArray alloc] init];
+    int highestScore = [ScoreHelper getHighestScore:self.currentRoundTotal];
     // Add player names and score fields.
     for (NSString* player in self.players) {
         UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, y, labelWidth, rowHeight)];
@@ -69,7 +71,13 @@
         [self.view addSubview:nameLabel];
         
         UILabel *scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(x + labelWidth, y, labelWidth, rowHeight)];
-        scoreLabel.text = [self.currentRoundTotal.scores[player] stringValue];
+        NSNumber *score = self.currentRoundTotal.scores[player];
+        if (score == [NSNumber numberWithInt:highestScore]) {
+            scoreLabel.text = [NSString stringWithFormat:@"%@🌸", [score stringValue]];
+        } else {
+            scoreLabel.text = [score stringValue];
+        }
+        
         [self.view addSubview:scoreLabel];
         
         UITextField *scoreField = [[UITextField alloc] initWithFrame:CGRectMake(x + labelWidth * 2, y, scoreWidth, rowHeight)];

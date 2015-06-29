@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F76C66E41B410EFA007655B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76C66E21B410EFA007655B9 /* Main.storyboard */; };
+		F76C66E71B41223E007655B9 /* ScoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F76C66E61B41223E007655B9 /* ScoreHelper.m */; };
 		F776A3441B40DB68002912FC /* RoundData.m in Sources */ = {isa = PBXBuildFile; fileRef = F776A3431B40DB68002912FC /* RoundData.m */; };
 		F776A3471B40F344002912FC /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F776A3461B40F344002912FC /* HistoryViewController.m */; };
 		F7F97D1D1B37367200FE171A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F97D1C1B37367200FE171A /* main.m */; };
@@ -32,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		F76C66E31B410EFA007655B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F76C66E51B41223E007655B9 /* ScoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreHelper.h; sourceTree = "<group>"; };
+		F76C66E61B41223E007655B9 /* ScoreHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreHelper.m; sourceTree = "<group>"; };
 		F776A3421B40DB68002912FC /* RoundData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundData.h; sourceTree = "<group>"; };
 		F776A3431B40DB68002912FC /* RoundData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundData.m; sourceTree = "<group>"; };
 		F776A3451B40F344002912FC /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				F776A3431B40DB68002912FC /* RoundData.m */,
 				F776A3451B40F344002912FC /* HistoryViewController.h */,
 				F776A3461B40F344002912FC /* HistoryViewController.m */,
+				F76C66E51B41223E007655B9 /* ScoreHelper.h */,
+				F76C66E61B41223E007655B9 /* ScoreHelper.m */,
 				F7F97D1A1B37367200FE171A /* Supporting Files */,
 			);
 			path = ScoreRecorder;
@@ -241,6 +246,7 @@
 				F7F97D4E1B39333A00FE171A /* GameRoundViewController.m in Sources */,
 				F7F97D1D1B37367200FE171A /* main.m in Sources */,
 				F7F97D481B37977000FE171A /* AddPlayerTableViewController.m in Sources */,
+				F76C66E71B41223E007655B9 /* ScoreHelper.m in Sources */,
 				F776A3441B40DB68002912FC /* RoundData.m in Sources */,
 				F776A3471B40F344002912FC /* HistoryViewController.m in Sources */,
 				F7F97D231B37367200FE171A /* ScoreRecorder.xcdatamodeld in Sources */,

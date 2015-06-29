@@ -7,7 +7,8 @@
 //
 
 #import "HistoryViewController.h"
-#include "RoundData.h"
+#import "RoundData.h"
+#import "ScoreHelper.h"
 
 @interface HistoryViewController ()
 
@@ -40,31 +41,41 @@
         roundLabel.text = [NSString stringWithFormat:@"Round %@", [@(i + 1) stringValue]];
         [scrollView addSubview:roundLabel];
     }
-    x = width / 5;
-    y += rowHeight + rowMargin;
     
-    // Add player names and scores.
+    // Add player names.
+    x = width / 5;
+    y = height / 5 + rowMargin + rowHeight;
     for (int i = 0; i < self.players.count; i++) {
-        x = width / 5;
-        
-        // Add player name.
         NSString *name = self.players[i];
         UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, y, labelWidth, rowHeight)];
         nameLabel.text = name;
         [scrollView addSubview:nameLabel];
-        x += labelWidth;
+        y += rowHeight + rowMargin;
+    }
+    
+    // Add scores.
+    x = width / 5 + labelWidth;
+    for (int i = 0; i < self.history.count; i++) {
+        y = height / 5 + rowMargin + rowHeight;
         
-        // Add scores.
-        for (int j = 0; j < self.history.count; j++) {
-            RoundData *round = self.history[j];
-            
+        RoundData *round = self.history[i];
+        int highestScore = [ScoreHelper getHighestScore:round];
+        
+        for (int j = 0; j < self.players.count; j++) {
             UILabel *scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(x, y, labelWidth, rowHeight)];
-            scoreLabel.text = [round.scores[name] stringValue];
+            NSString *name = self.players[j];
+            NSNumber *score = round.scores[name];
+            if (score == [NSNumber numberWithInt:highestScore]) {
+                scoreLabel.text = [NSString stringWithFormat:@"%@🌸", [score stringValue]];
+            } else {
+                scoreLabel.text = [score stringValue];
+            }
             [scrollView addSubview:scoreLabel];
             
-            x += labelWidth;
+            y += rowHeight + rowMargin;
         }
-        y += rowHeight + rowMargin;
+        
+        x += labelWidth;
     }
 }
 
