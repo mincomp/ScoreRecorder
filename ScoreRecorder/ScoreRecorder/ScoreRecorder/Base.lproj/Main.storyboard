@@ -34,11 +34,6 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Add Players" id="xPg-HT-qEc">
-                        <barButtonItem key="leftBarButtonItem" title="Edit" id="kAt-hO-Tkt">
-                            <connections>
-                                <action selector="editPlayer:" destination="8of-4l-rWX" id="iMI-8d-1oY"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="WCG-ph-Nr6">
                             <connections>
                                 <action selector="addPlayer:" destination="8of-4l-rWX" id="rgb-TC-FW6"/>

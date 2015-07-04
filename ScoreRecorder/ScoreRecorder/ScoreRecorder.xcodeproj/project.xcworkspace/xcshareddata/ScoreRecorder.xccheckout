@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>AECB84AC-CADA-4A77-9B38-1B9E609D0787</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>ScoreRecorder</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7B8496DF188830C5C87E9F45E7DCC0A14A5B6377</key>
 		<string>https://github.com/mincomp/ScoreRecorder.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ScoreRecorder/ScoreRecorder/ScoreRecorder.xcodeproj/project.xcworkspace</string>
+	<string>ScoreRecorder/ScoreRecorder/ScoreRecorder.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7B8496DF188830C5C87E9F45E7DCC0A14A5B6377</key>

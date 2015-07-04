@@ -10,7 +10,6 @@
 #import "GameRoundViewController.h"
 
 @interface AddPlayerTableViewController ()
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *editButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
 
 @end
@@ -23,15 +22,12 @@
     [alert show];
 }
 
-- (IBAction)editPlayer:(id)sender {
-    [self setEditing:true];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
     self.players = [[NSMutableArray alloc] init];
 }
